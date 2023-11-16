@@ -2,9 +2,15 @@ import Button from "../Elements/Button";
 import InputForm from "../Elements/input";
 
 const FormLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
+    localStorage.setItem("email", e.target.email.value);
+    localStorage.setItem("password", e.target.password.value);
+    window.location.href = "./products";
+  };
   return (
     <>
-      <form action="">
+      <form onSubmit={handleLogin}>
         <InputForm
           label="Email"
           type="email"
@@ -18,7 +24,9 @@ const FormLogin = () => {
           name="password"
         />
 
-        <Button classname="bg-blue-600 w-full">Login</Button>
+        <Button classname="bg-blue-600 w-full" type="submit">
+          Login
+        </Button>
       </form>
     </>
   );
