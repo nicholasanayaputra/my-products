@@ -1,9 +1,9 @@
 const Button = (props) => {
   const {
     children,
-    classname = "bg-black",
+    classname = "bg-amber-600",
     onClick = () => {},
-    type = "button",
+    type,
   } = props;
   return (
     <button

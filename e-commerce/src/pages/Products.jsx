@@ -70,9 +70,9 @@ const ProductsPage = () => {
   };
   return (
     <Fragment>
-      <div className="flex justify-end h-20 bg-blue-600 text-white items-center px-10">
+      <div className="flex justify-between h-20 bg-amber-600 text-white items-center px-10">
         {email}
-        <Button className="ml-6 bg-black" onClick={handleLogout}>
+        <Button className="ml-6 bg-black font-bold" onClick={handleLogout}>
           Logout
         </Button>
       </div>

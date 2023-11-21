@@ -24,7 +24,7 @@ const FormLogin = () => {
           name="password"
         />
 
-        <Button classname="bg-blue-600 w-full" type="submit">
+        <Button classname="bg-amber-600 w-full" type="submit">
           Login
         </Button>
       </form>
