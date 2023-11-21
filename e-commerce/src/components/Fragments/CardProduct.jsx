@@ -3,7 +3,7 @@ import Button from "../Elements/Button";
 const CardProduct = (props) => {
   const { children } = props;
   return (
-    <div className="w-full max-w-xs bg-gray-800 rounded-lg shadow mx-2 ">
+    <div className="w-full max-w-xs bg-gray-800 rounded-lg shadow mx-2 border my-2 flex flex-col ">
       {children}
     </div>
   );
@@ -40,7 +40,10 @@ const Footer = (props) => {
         Rp{" "}
         {price.toLocaleString("id-ID", { styles: "currency", currency: "IDR" })}
       </span>
-      <Button className="bg-black" onClick={() => handleAddToCart(id)}>
+      <Button
+        className="bg-amber-500 text-black"
+        onClick={() => handleAddToCart(id)}
+      >
         Add To Cart
       </Button>
     </div>
