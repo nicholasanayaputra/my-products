@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { Fragment, useEffect, useRef, useState } from "react";
-import Button from "../components/Elements/Button";
 import CardProduct from "../components/Fragments/CardProduct";
 import { getProducts } from "../services/product-service";
 import { useLogin } from "../hooks/useLogin";
